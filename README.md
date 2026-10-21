@@ -1,45 +1,43 @@
-# Dawai Yaad - Elderly Medicine Reminder
+# Medicine Reminder - for Elders
 
-Big-button medicine reminder for elders with voice alerts, taken/missed record and emergency call buttons.
+A big-button medicine reminder designed for elderly people: loud voice alerts in Hindi or English, a taken/missed record, and one-tap emergency call buttons.
 
 **Live app:** https://akash991833.github.io/elderly-medicine-reminder-app/
 
-Free, no sign-up, no ads. Works in the browser, offline after the first visit, and can be installed on your phone (Chrome menu > Add to Home screen / Install app). Everything is saved on your device only.
+Free, no sign-up, no ads. Works in the browser, offline after the first visit, and can be installed on your phone. Everything is saved on the device only.
 
 ## Features
 
-- Add medicines with dose, before/after food, one or more times a day and optional end date
-- Today screen with a large "next medicine" card and one-tap "Dawai le li"
-- Full-screen alert with beep and spoken reminder (Hindi or English), "remind me in 10 minutes" snooze
-- Taken / missed record and a 7-day summary, printable for family
-- Emergency tab: 112 and 108 call buttons, family and doctor numbers, medical info card (blood group, allergy, conditions)
-- Text size: normal / large / extra large; dark and light mode
-- JSON backup and restore; works offline, installable on phone
+- Simple Today screen: next dose in large type, one big "Taken" button
+- Medicines with dose, food instruction, multiple daily times, start/end dates
+- Loud alarm with spoken voice alerts (Hindi or English), vibration and repeat every 30 seconds until answered, with a 10-minute snooze
+- Missed-dose marking (after 2 hours) and a 7-day adherence record with a chart, printable for family
+- Emergency: one-tap 112 / 108 call buttons, family and doctor contacts, medical info card (blood group, allergies, conditions)
+- Text size setting (Normal / Large / Extra large), dark and light mode
+- JSON backup and restore
 
 ## How to use
 
-1. Settings: enter the elder's name and choose text size and voice language.
-2. Dawaiyaan tab: add each medicine and its times.
-3. Keep the app open (or install it and enable "Screen on rakho") so the alert can ring.
-4. Tap "Dawai le li" when taken. Missed doses show in red.
-5. Emergency tab: add family and doctor numbers.
+1. Open Medicines and add each medicine with its times.
+2. Add family contacts on the Emergency tab and fill in the medical information.
+3. In Settings, set the elder's name, text size and voice language, and allow notifications.
+4. Keep the app open (ideally on charge with "Keep screen on") so the alarm can ring.
 
 ## Screenshots
 
-<img src="screenshots/1-today.png" width="240" alt="1-today">
-<img src="screenshots/2-medicines.png" width="240" alt="2-medicines">
-<img src="screenshots/3-alert.png" width="240" alt="3-alert">
-<img src="screenshots/4-today-progress.png" width="240" alt="4-today-progress">
-<img src="screenshots/5-emergency.png" width="240" alt="5-emergency">
+<img src="screenshots/1-today.png" width="240" alt="Today">
+<img src="screenshots/3-alert.png" width="240" alt="Medicine alarm">
+<img src="screenshots/2-medicines.png" width="240" alt="Medicines">
+<img src="screenshots/4-today-progress.png" width="240" alt="Weekly record">
+<img src="screenshots/5-emergency.png" width="240" alt="Emergency">
 
-![desktop](screenshots/6-desktop.png)
+![Desktop view](screenshots/6-desktop.png)
 
 ## Good to know (limits)
 
-- A web app cannot ring when the browser is fully closed or the phone is locked. Keep the app open (use "Screen on rakho" and a charger), or enable notifications for an extra nudge while the browser is running.
-- Hindi voice needs a Hindi text-to-speech voice on the phone; otherwise the phone uses its default voice.
-- This app is a reminder only. It gives no medical advice and does not replace the doctor's prescription.
-- The numbers 112 (national emergency) and 108 (ambulance in most states) are standard in India; confirm for your state.
+- A browser cannot ring the alarm while the app is fully closed. Keep the app open, or keep the phone charging with "Keep screen on" turned on. This is a browser limitation, not a setting.
+- Hindi voice alerts need a Hindi text-to-speech voice installed on the phone (most Android phones have one).
+- This app does not replace a doctor's advice. Take only the medicines your doctor has prescribed.
 
 ## Run it yourself
 
@@ -51,11 +49,11 @@ cd elderly-medicine-reminder-app
 python3 -m http.server 8080
 ```
 
-Plain HTML, CSS and JavaScript. No tracking, no external requests (fonts, scripts and data are all local).
+Plain HTML, CSS and JavaScript. No tracking, no external requests.
 
 ## Privacy
 
-No account, no server, no analytics. Data stays in your browser's local storage. Clearing browser data deletes it, so use the Backup option if it matters.
+No account, no server, no analytics. Medicines, contacts and medical notes stay in the browser's local storage on the device.
 
 ## License
 
